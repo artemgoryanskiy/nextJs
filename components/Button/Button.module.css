@@ -1,0 +1,52 @@
+.button {
+    display: inline-block;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.primary {
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+.primary:hover {
+    background: var(--primary-hover-color);
+}
+
+.primary svg {
+    fill: var(--white);
+}
+
+.secondary {
+    color: var(--black);
+    background: none;
+    border: 1px solid var(--gray-light);
+}
+
+.secondary:hover {
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+.secondary:hover svg {
+    fill: var(--white);
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.arrow svg {
+    vertical-align: middle;
+}
+
+.down {
+    transform: rotate(90deg);
+    transition: transform .2s;
+}

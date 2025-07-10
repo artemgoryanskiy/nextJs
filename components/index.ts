@@ -1,1 +1,4 @@
-export * from './HTag/HTag'
+export {default as HTag} from './HTag'
+export {default as Button} from './Button'
+export {default as Paragraph} from './Paragraph'
+export {default as Tag} from './Tag'
