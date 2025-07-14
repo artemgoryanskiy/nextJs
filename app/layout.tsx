@@ -1,13 +1,13 @@
 import type {Metadata} from 'next';
 import {Noto_Sans} from 'next/font/google';
 import './globals.css';
+import {Header, SideBar, Footer} from '@/components';
 
 const notoSans = Noto_Sans({
     variable: '--font-noto-sans',
     subsets: ['latin', 'cyrillic'],
     display: 'swap'
 });
-
 
 export const metadata: Metadata = {
     title: 'Наш проект',
@@ -22,7 +22,15 @@ export default function RootLayout({
     return (
         <html lang="ru">
             <body className={`${notoSans.variable} ${notoSans.className}`}>
-                {children}
+                <Header/>
+                <div>
+                    <SideBar/>
+                    <div>
+                        {children}
+                    </div>
+                </div>
+                <Footer/>
+
             </body>
         </html>
     );
